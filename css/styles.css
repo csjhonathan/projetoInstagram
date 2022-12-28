@@ -1,0 +1,522 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+body {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+.superiorBar {
+    height: 54px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    border-bottom: 1px solid #dbdbdb;
+    z-index: 9999;
+}
+
+.superiorBar input {
+    width: 215px;
+    height: 28px;
+    background-color: #fafafa;
+    border-radius: 3px;
+    border: 1px solid #dbdbdb;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 55px;
+}
+
+#verticalBar {
+    width: 1px;
+    height: 22px;
+    background: #dbdbdb;
+    margin: 0 10px;
+}
+
+.logo img {
+    margin-top: 10px;
+    width: 103px;
+    height: 29px;
+    cursor: pointer;
+}
+
+#iconsTop {
+    display: flex;
+    justify-content: space-between;
+    width: 126px;
+}
+
+ion-icon {
+    width: 19px;
+    height: 19px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding-top: 84px;
+    background-color: #fafafa;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 616px;
+}
+
+.stories {
+    width: 610px;
+    height: 118px;
+    margin-bottom: 24px;
+    display: flex;
+    border: 1px solid#dbdbdb;
+    border-radius: 3px;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.stories::-webkit-scrollbar {
+    display: none;
+}
+
+.storie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 66px;
+    height: 118px;
+    margin-left: 18px;
+}
+
+#background {
+    width: 66px;
+    height: 66px;
+    position: absolute;
+    top: 16.5px;
+}
+
+.storiePhoto {
+    text-align: center;
+    z-index: 1;
+}
+
+.stories img {
+    width: 56px;
+    height: 56px;
+    margin: 0 7px;
+    border-radius: 28px;
+    padding: 1px;
+    cursor: pointer;
+}
+
+.storieName {
+    width: 100%;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.storiesBar {
+    position: relative;
+}
+
+.storiesBar ion-icon {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 46px;
+    right: 8px;
+    border-radius: 13px;
+    color: white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    z-index: 2;
+}
+
+.post {
+    border: 1px solid#dbdbdb;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    width: 610px;
+    margin-bottom: 60px;
+}
+
+.superior {
+    height: 61px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+
+.name {
+    height: 100%;
+    width: 50%;
+    cursor: pointer;
+}
+
+.name:hover {
+    color: #8e8e8e;
+}
+
+.iconPoints {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+    margin-right: 17px;
+}
+
+.inferior {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70px;
+    background-color: #ffffff;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+}
+
+.iconsLeft {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.iconsLeft ion-icon {
+    margin-left: 15px;
+    margin-top: 12px;
+}
+
+.iconsRight {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 18px;
+    width: 80%;
+}
+
+.iconsRight ion-icon {
+    margin-top: 12px;
+}
+
+.curtido {
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.curtido img {
+    width: 20px;
+    height: 20px;
+    margin-left: 11px;
+    margin-right: 5px;
+    border-radius: 13px;
+    justify-content: center;
+}
+
+.curtido p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.autor {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.user {
+    color: #262626;
+    font-weight: 500;
+    margin-left: 11px;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.legenda {
+    font-weight: 300;
+}
+
+.coment {
+    background-color: #ffffff;
+}
+
+.coment div {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.like {
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+ion-icon:hover {
+    color: #8e8e8e;
+}
+
+.marked {
+    color: #00376b;
+    cursor: pointer;
+}
+
+.coments {
+    background-color: #ffffff;
+}
+
+.comentar {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    height: 49px;
+    border-top: 1px solid#dbdbdb;
+    background-color: #ffffff;
+}
+
+.comentar input {
+    height: 45px;
+    border: none;
+    background-color: #ffffff;
+}
+
+.comentar svg {
+    margin-left: 11px;
+    margin-right: 11px;
+    cursor: pointer;
+}
+
+.comentar div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.comentar button {
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    font-size: 14px;
+    font-weight: 700;
+    padding-right: 20px;
+    color: #b2dffc;
+    background-color: #ffffff;
+    transition-duration: 0.3s;
+}
+
+.comentar button:hover {
+    color: #0095f6;
+}
+
+.postTime {
+    margin-left: 11px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    background-color: #ffffff;
+}
+
+.comentario {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tempo {
+    margin-top: 2px;
+    font-weight: 100;
+    font-size: 10px;
+    margin-right: 5px;
+}
+
+.translate {
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.seeMore {
+    color: #8e8e8e;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    margin-left: 11px;
+    cursor: pointer;
+}
+
+.sidebar {
+    width: 293px;
+    display: flex;
+    justify-content: center;
+    border: none;
+    position: relative;
+    padding-left: 29px;
+}
+
+.sidebarContent {
+    width: 293px;
+    position: fixed;
+}
+
+.sidebarContent img {
+    margin-right: 17px;
+}
+
+#primeiroPerfil {
+    margin-top: 23px;
+    display: flex;
+    align-items: center;
+}
+
+#primeiroPerfil .change {
+    margin-left: 106px;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+}
+
+.name img {
+    margin-left: 17px;
+    margin-right: 15px;
+    width: 32px;
+    height: 32px;
+    border-radius: 28px;
+}
+
+video {
+    width: 100%;
+    height: 528px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626;
+    cursor: pointer;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #8e8e8e;
+}
+
+.sugestoes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.pravc {
+    display: flex;
+    align-items: center;
+}
+
+.sugestoes h3 {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.perfil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 17px;
+}
+
+.sidebarContent p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #139ef2;
+    cursor: pointer;
+}
+
+.sidebarContent p:hover {
+    color: #00376b;
+}
+
+.perfil h3,
+h2 {
+    line-height: 20px;
+}
+
+.perfil img {
+    width: 32px;
+    height: 32px;
+}
+
+#perfilContent {
+    display: flex;
+    align-items: center;
+}
+
+#perfilContent img {
+    border-radius: 16px;
+}
+
+#bold {
+    font-weight: 500;
+}
+
+.sobre {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: #c7c7c7;
+    margin-top: 33px;
+    margin-bottom: 18px;
+}
+
+.copyright {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: #c7c7c7;
+}
+
+#primeiroPerfil img {
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+}
+
+.ver h2:hover {
+    color: #8e8e8e;
+}
+
+@media (min-width: 614px) {
+    .superiorBarMobile {
+        display: none;
+    }
+
+    .inferiorBarMobile {
+        display: none;
+    }
+}
