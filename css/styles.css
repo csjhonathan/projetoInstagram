@@ -7,15 +7,24 @@ body {
 
 .superiorBar {
     height: 54px;
+    width: 935px;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+.superiorMenu{
+    border-bottom: 1px solid #dbdbdb;
+    height: 54px;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     background-color: white;
-    align-items: center;
     position: fixed;
     top: 0px;
     left: 0px;
-    border-bottom: 1px solid #dbdbdb;
     z-index: 9999;
 }
 
